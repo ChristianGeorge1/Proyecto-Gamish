@@ -3,9 +3,11 @@ const app = express();
 
 const port = 4000; 
 
+//? Esta madre hace que funcione el ejs
+app.set('view engine', 'ejs');
 
 app.get('/',(req, res)=>{ 
-    res.send('Debe ir al render home')
+    res.render('index')
 })
 
 app.listen(port, () => { 
