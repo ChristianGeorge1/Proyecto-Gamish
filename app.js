@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 const port = 4000; 
 
 
-mongoose.connect('mongodb+srv://admi:admi@gamish-ssidz.mongodb.net/<dbname>?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://admi:admi@gamish-ssidz.mongodb.net/gamish?retryWrites=true&w=majority')
 var Schema = mongoose.Schema; 
 
 //*Schema de juegos
@@ -53,7 +53,7 @@ app.post('/insertar',urlencodedParser ,(req, res)=> {
         if(err){
             console.log('Hay un error');
         }else{ 
-            res.redirect('/juegos')
+            res.send('Guardo correctamente');
         }
     })
 })
