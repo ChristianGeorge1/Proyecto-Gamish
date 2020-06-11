@@ -35,8 +35,10 @@ app.get('/insertarJuegos', urlencodedParser,(req, res) => {
     res.render('insertarJuego')
 })
 
-app.post('/insertar', (req, res)=> { 
+app.post('/insertar',urlencodedParser ,(req, res)=> { 
     var juego = mongoose.model('juegos', juegoSchema); 
+    
+    console.log(req.body)
 
     var myJuego = juego({ 
         nombre: req.body.nombre, 
