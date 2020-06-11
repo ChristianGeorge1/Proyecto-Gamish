@@ -9,7 +9,7 @@
     <h1 style="text-align: center;">Juegos</h1>
     <ul>
         <% juegos.forEach(function(o){ %>
-            <li><%= o.nombre %> ----> <%= o.costo %></li>    
+            <li><%= o.nombre %> --- <%= o.costo %> --- <%= o.compañia %> -- <%= o.plataformas %> -- <%= o.categoria %> -- <%= o.descripcion %> </li>    
         <% }); %> 
     </ul>
 </body>
