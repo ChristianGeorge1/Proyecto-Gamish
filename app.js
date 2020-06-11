@@ -87,7 +87,7 @@ app.post('/insertar',urlencodedParser ,(req, res)=> {
         if(err){
             console.log('Hay un error');
         }else{ 
-            res.redirect('/juegos')
+            res.send('Guardo correctamente');
         }
     })
 })
