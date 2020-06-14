@@ -1,3 +1,6 @@
 .tamaño{
     padding: 10px !important;
-}
+} 
+.col.s12 > .btn {
+    width: 100%;
+ }
