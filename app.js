@@ -57,7 +57,7 @@ var userSchema = new Schema ({
 
 
 
-//! Inicio de sesion --> Inicio
+//? Inicio de sesion --> Inicio
 app.post('/logIn', urlencodedParser, (req, res) => {
     var user = mongoose.model('user', userSchema)
 
@@ -68,14 +68,14 @@ app.post('/logIn', urlencodedParser, (req, res) => {
         if(err){
             res.send('No se encontro usuario con este correo')
         }else{
-            res.render('home', {user})
+            res.redirect('/juegos'/*, {user}*/)
         }
 
     });
 
 });
 
-//! Inicio de sesion --> Fin
+//? Inicio de sesion --> Fin
 
 //* Registro usuario --> inicio
 
@@ -83,7 +83,7 @@ app.get('/registroUsuario', (req, res) => {
     res.render('registroUsuario')
 });
 
-//! Agregar usuario --> inicia
+//? Agregar usuario --> inicia
 app.post('/registrarUsuario', urlencodedParser, (req,res) => {
     
 
@@ -118,7 +118,7 @@ app.post('/registrarUsuario', urlencodedParser, (req,res) => {
         if(err){
             console.log('Hay un error');
         }else{ 
-            res.send('Guardo correctamente'); //Aqui habra un render al home
+            res.redirect('juegos'); //Aqui habra un render al home
         }
     })
     

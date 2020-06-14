@@ -6,16 +6,24 @@
     <title>Intengo</title>
 </head>
 <body>
-    <h1>Bienvenido a Gamish</h1>
 
-    <form method="POST" action="/logIn">
-        <label for="correo">Correo:</label>
-        <input type="text" name="correo" id="correo"> <br>
-
-        <label for="contraseña">Contraseña:</label>
-        <input type="password" name="contraseña" id="contraseña"> <br>
-        <input type="submit" value="Enviar">
-    </form>
-    <p>No te has regitrado? <a href="/registroUsuario">Resistrate</a></p>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 block-black">
+                <h1>Bienvenido a Gamish</h1>
+        
+                <form method="POST" action="/logIn">
+                    <label for="correo">Correo:</label>
+                    <input type="text" name="correo" id="correo"> <br>
+        
+                    <label for="contraseña">Contraseña:</label>
+                    <input type="password" name="contraseña" id="contraseña"> <br>
+                    <input type="submit" value="Enviar">
+                </form>
+                <p>No te has regitrado? <a href="/registroUsuario">Resistrate</a></p>
+            </div>
+        </div>
+        
+    </div>
 </body>
 </html>
