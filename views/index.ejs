@@ -3,19 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intengo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../public/styles.css">
+    <title>Gamish</title>
 </head>
 <body>
-    <h1>Bienvenido a Gamish</h1>
 
-    <form method="POST" action="/logIn">
-        <label for="correo">Correo:</label>
-        <input type="text" name="correo" id="correo"> <br>
+    <div class="container">
+        <div class="row">
+            <dv class="col s12 m12">
+               
+                    <h1 class=" center-align">Bienvenido a Gamish</h1>
+        
+                    <form method="POST" action="/logIn">
+                        <div class="input-field">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input type="text" name="correo" id="correo" class="validate">
+                            <label for="correo">Correo</label>
+                        </div>
+                        
+                        <div class="input-field">
+                            <i class="material-icons prefix">fingerprint</i>
+                            <input type="password" name="contraseña" id="contraseña" class="validate">
+                            <label for="contraseña">Contraseña:</label>
+    
+                        </div>
+    
+                        <input type="submit" value="Enviar" class="waves-effect waves-light btn-large">
+                    </form>
+                    <p>No te has registrado? <a href="/registroUsuario">Registrate</a></p>
+            </div>
+        </div>
+        
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-        <label for="contraseña">Contraseña:</label>
-        <input type="password" name="contraseña" id="contraseña"> <br>
-        <input type="submit" value="Enviar">
-    </form>
-    <p>No te has regitrado? <a href="/registroUsuario">Resistrate</a></p>
 </body>
 </html>
