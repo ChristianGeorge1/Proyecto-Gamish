@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+<body>
+    <form method="POST" action="/registrarUsuario">
+        <h2>Formulario de registro</h2>
+        <label for="nombre">Nomrbe</label>
+        <input type="text" name="nombre" id="nombre"> <br><br>
+
+        <label for="correo">Correo</label>
+        <input type="email" name="correo" id="correo"> <br><br>
+
+        <label for="contraseña">Contraseña</label>
+        <input type="password" name="contraseña" id="contraseña"> <br><br>
+
+        <label for="telefono">Telefono</label>
+        <input type="number" name="telefono" id="telefono"> <br><br>
+
+        <label for="genero">Genero</label>
+        <select name="genero" id="genero">
+            <option value="">--Selecciona un genero--</option>
+            <option value="Hombre">Hombre</option>
+            <option value="Mujer">Mujer</option>
+        </select>
+
+
+        <h2>Domicilio</h2>
+        <label for="estado">Estado</label>
+        <input type="text" name="estado" id="estado"> <br><br>
+
+        <label for="municipio">Municipio</label>
+        <input type="text" name="municipio" id="municipio"> <br><br>
+
+        <label for="cp">C.P.</label>
+        <input type="number" name="cp" id="cp"> <br><br>
+
+        <label for="colonia">Colonia</label>
+        <input type="text" name="colonia" id="colonia"> <br><br>
+
+        <label for="calle">Calle</label>
+        <input type="text" name="calle" id="calle"><br><br>
+
+        <label for="numCasa">Numero</label>
+        <input type="number" name="numCasa" id="numCasa">
+
+        <h2>Datos de tarjeta</h2>
+        <label for="titular">Titular</label>
+        <input type="text" name="titular" id="titular"> <br><br>
+
+        <label for="numTarjeta">Numero de tarjeta</label>
+        <input type="number" name="numTarjeta" id="numTarjeta"><br><br>
+
+        <label for="venciMes">Vencimiento mes</label>
+        <input type="number" name="venciMes" id="venciMes"><br><br>
+
+        <label for="venciAno">Vencimiento año</label>
+        <input type="number" name="venciAno" id="venciAno"><br><br>
+
+        <label for="cvv">CVV</label>
+        <input type="number" name="cvv" id="cvv"><br><br>
+
+        <input type="submit" value="Registrar">
+    </form>
+
+</body>
+</html>
